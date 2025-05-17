@@ -58,6 +58,13 @@ void print_iron(Iron* iron)
        "steam supply:\n" << iron->steam_supply <<  "power:\n" << iron->power << std::endl; 
 }
 
+void free_array(Iron* iron)
+{
+delete[] iron->brand;
+delete[] iron->model;
+delete[] iron->color;
+delete iron;
+}
 int main()
 {
     Iron* iron = new Iron();
