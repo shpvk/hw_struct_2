@@ -70,4 +70,5 @@ int main()
     Iron* iron = new Iron();
     fill_iron(iron); 
     print_iron(iron);
+    free_array(iron);
 }
